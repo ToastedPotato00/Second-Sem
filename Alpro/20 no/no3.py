@@ -5,7 +5,7 @@ def aritmatika(arr,prev=0,index=0,current=True):
         return current
     if index == 0:
         prev = abs(arr[index+1]-arr[index])
-    if abs(arr[index+1] - arr[index]) == prev:
+    if arr[index+1] - arr[index] == prev:
         return aritmatika(arr,prev,index+1)
     else:
         return aritmatika(arr,prev,index+1,current=False)
